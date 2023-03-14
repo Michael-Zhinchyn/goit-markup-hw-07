@@ -96,10 +96,6 @@
     color: var(--site-primary);
 }
 
-.logo:focus {
-    outline-color: var(--site-primary);
-}
-
 .logo-firstcolor {
       font-family: 'Raleway';
       font-style: normal;
@@ -110,7 +106,11 @@
       text-transform: uppercase;
       color: var(--btn-primary);
   }
-  
+ 
+.logo:focus {
+    outline-color: var(--site-primary);
+}
+
 .header-item {
     font-weight: 500;
     font-size: 16px;
@@ -268,6 +268,19 @@
 .features{
         padding-top: 120px;
     }
+
+.features-heading {
+    margin-bottom: 8px;
+    margin-top: 0px;
+    text-align: left;
+}
+
+.features-text {
+    width: 264px;
+    height: 72px;
+    margin: 0;
+    text-align: left;
+}
     
 .section-team {
     background: var(--btn-back);
@@ -306,6 +319,11 @@
 
 .icon-astronaut::before {
     background-image: url(../images/astronaut.svg);
+}
+
+.team {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .team-list {
@@ -479,22 +497,6 @@
     margin-bottom: 8px;
 }
 
-.features-heading {
-    margin-bottom: 8px;
-    margin-top: 0px;
-    text-align: left;
-}
-
-.team {
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-.card-heading {
-    text-align: left;
-    padding-left: 16px;
-    padding-bottom: 8px;
-}
-
 .hero-item-content {
     font-size: 16px;
     line-height: 1.5;
@@ -503,12 +505,15 @@
     margin-bottom: 8px;
 }
 
-.features-text {
-    width: 264px;
-    height: 72px;
-    margin: 0;
+
+
+
+.card-heading {
     text-align: left;
+    padding-left: 16px;
+    padding-bottom: 8px;
 }
+
 
 .card-item-content {
     text-align: left;
