@@ -348,7 +348,6 @@ p {
 /*---------- FOOTER ----------- */
 
 .footer-blocks {
-    margin: 0;
    
 }
 .footer {
@@ -447,7 +446,7 @@ p {
 }
 
 .form-field-ftr input {
-    
+    width: 100%;
     height: 40px;
     background-color: var(--site-primary);
     border: 1px solid var(--WHITE);
