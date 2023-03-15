@@ -509,6 +509,20 @@
     padding-left: 16px;
 }
 
+
+.logo-footer {
+    text-decoration: none;
+    color: var(--btn-back);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
 .footer-text {
     width: 264px;
     font-size: 16px;
@@ -609,19 +623,6 @@
 .company-logo-link:focus {
     border-color: var(--btn-hover-active);
     outline: none;
-}
-
-.logo-footer {
-    text-decoration: none;
-    color: var(--btn-back);
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 21px;
-    align-items: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
 }
 
 
