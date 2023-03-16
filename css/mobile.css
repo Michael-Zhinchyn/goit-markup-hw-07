@@ -417,6 +417,14 @@ li {
     fill: var(--icon-background);
 }
 
+.company-logo-link:focus .logo-icon {
+    fill: var(--btn-hover-active);
+}
+
+.company-logo-link:focus {
+    border-color: var(--btn-hover-active);
+    outline: none;
+}
 /*---------- HERO ----------- */
 
 /*---------- FOOTER ----------- */
