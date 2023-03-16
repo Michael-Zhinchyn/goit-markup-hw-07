@@ -26,6 +26,8 @@ img {
     height: auto;
 }
 
+
+
 body {
     font-family: "Roboto";
     font-style: normal;
@@ -52,17 +54,17 @@ li {
     list-style: none;
 } 
 
- @media screen and (max-width: 428px){
-    
+ @media screen and (min-width: 320px) and (max-width: 428px) {
 .container {
+    width: 100%;
+    max-width: 428px;
     padding-left: 16px;
     padding-right: 16px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    overflow-x: hidden;
+    }
 }
 
- 
+
 
 /*---------- HEADER ----------- */
 .header {
@@ -130,7 +132,7 @@ li {
     justify-content: space-between;
     
     padding: 24px 24px 40px 40px;
-    width: 428px;
+    width: 100%;
     height: 796px;
     background-color: var(--WHITE);
 }
@@ -159,7 +161,7 @@ li {
     
 .menu-phone {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 32px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
@@ -429,6 +431,9 @@ li {
     padding-top: 96px;
     padding-bottom: 96px;
     width: auto;
+    height: 664px;
+    
+    
 }
 
 .logo-footer {
@@ -499,7 +504,7 @@ li {
 
 .block-subscribe-form {
     height: 80px;
-    width: 398px;
+    width: 100%;
     margin: auto;
 }
 
@@ -561,22 +566,7 @@ li {
     outline: none;
 }
 
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(46, 47, 66, 0.4);
-    transition: opacity 250ms;
-}
-
-.backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 250ms;
-}
- }
+ 
 /*---------- END-FOOTER ----------- */
 
 
@@ -587,7 +577,7 @@ li {
      top: 0;
      left: 0;
      width: 100%;
-     height: 100%;
+     height: 796px;
      background-color: rgba(46, 47, 66, 0.4);
      transition: opacity 250ms;
  }
@@ -613,7 +603,6 @@ li {
      transition: background-color var(--basic-transition);
  }
 
-
  .modal-heading {
      text-align: center;
      font-size: 16px;
@@ -630,12 +619,13 @@ li {
  .form {
     position: absolute;
     top: 96px;
+    bottom: 96px;
     left: 18px;
-    
+    right: 18px;
     padding: 72px 24px;
     background-color: #FCFCFC;
-    width: 392px;
-    height: 586px;
+    width: auto;
+    height: auto;
  }
 
  .form-field-modal {
@@ -665,24 +655,24 @@ li {
  }
 
  textarea {
-     resize: none;
-     height: 120px;
-     font-family: inherit;
-     font-weight: inherit;
-     font-size: 12px;
-     line-height: 1.17;
-     color: var(--site-primary);
-     padding: 8px 16px;
-     border: 1px solid rgba(33, 33, 33, 0.2);
-     border-radius: 4px;
-     background-color: var(--modal-bcgd);
-     transition: outline-color var(--basic-transition);
+    resize: none;
+    height: 120px;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 12px;
+    line-height: 1.17;
+    color: var(--site-primary);
+    padding: 8px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    background-color: var(--modal-bcgd);
+    transition: outline-color var(--basic-transition);
  }
 
  input {
-     padding-left: 38px;
-     color: var(--site-primary);
-     transition: outline-color var(--basic-transition);
+    padding-left: 38px;
+    color: var(--site-primary);
+    transition: outline-color var(--basic-transition);
  }
 
  input:focus {
@@ -690,29 +680,28 @@ li {
  }
 
  textarea:focus {
-     outline-color: var(--btn-hover-active);
+    outline-color: var(--btn-hover-active);
  }
 
  .btn-modal {
-     display: block;
-     position: absolute;
-     bottom: var(--basic-margin);
-     left: 119px;
-     background: var(--btn-primary);
-     border-radius: 4px;
-     border: var(--btn-primary);
-     font-family: 'Roboto';
-     font-weight: 500;
-     font-size: 16px;
-     line-height: 1.4px;
-     letter-spacing: 0.04em;
-     color: var(--WHITE);
-     cursor: pointer;
-     width: 169px;
-     height: 56px;
-     margin: 0 auto;
-     text-decoration: none;
-     transition: background-color var(--basic-transition);
+    display: block;
+    bottom: var(--basic-margin);
+    background: var(--btn-primary);
+    border-radius: 4px;
+    border: var(--btn-primary);
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4px;
+    letter-spacing: 0.04em;
+    color: var(--WHITE);
+    cursor: pointer;
+    width: 169px;
+    height: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    transition: background-color var(--basic-transition);
  }
 
  .btn-modal:hover,
@@ -732,6 +721,7 @@ li {
  .policy-block {
      position: relative;
      display: flex;
+     margin-bottom: var(--basic-margin);
  }
 
  .policy-text {
