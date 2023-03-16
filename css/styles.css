@@ -1,5 +1,5 @@
 
-  /*
+  
   :root {
     --site-primary: #2E2F42;
     --body-text: #434455;
@@ -43,6 +43,10 @@
       margin: 0;
       padding: 0;
   }
+
+  @media screen and (min-width: 1200px) {
+
+  
     .container {
     width: 1158px;
     padding: 0 15px;
@@ -907,5 +911,4 @@ textarea:focus {
     appearance: none;
     padding-left: 0;
 }
-
-*/
+}
