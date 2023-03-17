@@ -34,15 +34,19 @@
     color: var(--body-text);
   }
 
-  ul,
-  li,
+
   h1,
   h2,
   h3,
+  h4,
   p {
       margin: 0;
       padding: 0;
   }
+
+  ol, ul, li {list-style: none;}
+
+  a {text-decoration: none;}
 
   @media screen and (min-width: 1200px) {
 
@@ -53,11 +57,6 @@
     margin: 0 auto;
 }
 
-.list,
-.list-link {
-    list-style: none;
-    text-decoration: none;
-}
   
 .header-container,
 .site-nav,
@@ -127,7 +126,6 @@
     font-weight: inherit;
 }
 
-
 .header {
     border-bottom:
     1px solid var(--btn-border); 
@@ -140,7 +138,6 @@
     color: var(--site-primary);
     transition: color var(--basic-transition);
     }
-
 
 .menu-link:hover,
 .menu-link:focus {
@@ -260,6 +257,10 @@
     overflow: hidden;
 }
 
+.features {
+    padding-top: 120px;
+}
+
 .features-list {
     display: flex;
     gap: var(--basic-margin);
@@ -267,9 +268,17 @@
     padding-left: 0px;
     }
 
-.features{
-        padding-top: 120px;
-    }
+.features-item::before {
+    display: block;
+    content: "";
+    height: 112px;
+    background-size: 64px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--btn-back);
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
 
 .features-heading {
     margin-bottom: 8px;
@@ -366,17 +375,6 @@
     outline: none;
 }
 
-.features-item::before {
-    display: block;
-    content:"";
-    height: 112px;
-    background-size: 64px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--btn-back);
-    border-radius: 4px;
-    margin-bottom: 8px;
-}
 
 .icon-antenna::before {
     background-image: url(../images/antenna.svg);
@@ -507,12 +505,10 @@
     padding-bottom: 8px;
 }
 
-
 .card-item-content {
     text-align: left;
     padding-left: 16px;
 }
-
 
 .logo-footer {
     text-decoration: none;
@@ -628,7 +624,6 @@
     border-color: var(--btn-hover-active);
     outline: none;
 }
-
 
 .block-subscribe-form {
     position: relative;
