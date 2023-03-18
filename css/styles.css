@@ -1,4 +1,4 @@
-
+/*
   
   :root {
     --site-primary: #2E2F42;
@@ -15,10 +15,7 @@
     --modal-labels: #8E8F99;
     --basic-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     --box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    --phobe-bp: 480px;
-    --tablet-bp: 768px;
-    --desctop-bp: 1200px;
-}
+  }
 
   img {
     display: block;
@@ -34,24 +31,28 @@
     color: var(--body-text);
   }
 
-  ol, ul, li, h1, h2, h3, h4,p {
+  ul,
+  li,
+  h1,
+  h2,
+  h3,
+  p {
       margin: 0;
       padding: 0;
   }
-
-  ol, ul, li {list-style: none;}
-
-  a {text-decoration: none;}
-
-
-
- 
     .container {
     width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
 }
 
+.list, .list-link {
+    list-style: none;
+  }
+.link, .list-link {
+    text-decoration: none;
+  }
+  
 .header-container,
 .site-nav,
 .site-address,
@@ -60,8 +61,6 @@
     display: flex;
     align-items: center;
 }
-
-
 
 .nav-list {margin-left: 36px;}
 
@@ -95,6 +94,10 @@
     color: var(--site-primary);
 }
 
+.logo:focus {
+    outline-color: var(--site-primary);
+}
+
 .logo-firstcolor {
       font-family: 'Raleway';
       font-style: normal;
@@ -105,11 +108,7 @@
       text-transform: uppercase;
       color: var(--btn-primary);
   }
- 
-.logo:focus {
-    outline-color: var(--site-primary);
-}
-
+  
 .header-item {
     font-weight: 500;
     font-size: 16px;
@@ -121,6 +120,7 @@
 .address-item {
     font-weight: inherit;
 }
+
 
 .header {
     border-bottom:
@@ -134,6 +134,7 @@
     color: var(--site-primary);
     transition: color var(--basic-transition);
     }
+
 
 .menu-link:hover,
 .menu-link:focus {
@@ -188,6 +189,8 @@
     padding-left: 0px;
     margin-bottom: 0px;
 }
+
+
 
 .hero {
     background-color: var(--site-primary);
@@ -253,10 +256,6 @@
     overflow: hidden;
 }
 
-.features {
-    padding-top: 120px;
-}
-
 .features-list {
     display: flex;
     gap: var(--basic-margin);
@@ -264,9 +263,24 @@
     padding-left: 0px;
     }
 
+.features{
+        padding-top: 120px;
+    }
+    
+.section-team {
+    background: var(--btn-back);
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.hero-team {
+    padding-top: 120px;
+    padding-bottom: 72px;
+}
+
 .features-item::before {
     display: block;
-    content: "";
+    content:"";
     height: 112px;
     background-size: 64px;
     background-repeat: no-repeat;
@@ -276,56 +290,20 @@
     margin-bottom: 8px;
 }
 
-.features-heading {
-    margin-bottom: 8px;
-    margin-top: 0px;
-    text-align: left;
+.icon-antenna::before {
+    background-image: url(../images/antenna.svg);
 }
 
-.features-text {
-    width: 264px;
-    height: 72px;
-    margin: 0;
-    text-align: left;
-}
-    
-.section-team {
-    background: var(--btn-back);
-    padding-top: 120px;
-    padding-bottom: 120px;
+.icon-clock::before {
+    background-image: url(../images/clock.svg);
 }
 
-.hero-secondary-heading {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--site-primary);
-    margin-bottom: 72px;
+.icon-diagram::before {
+    background-image: url(../images/diagram.svg);
 }
 
-.hero-item-heading {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    color: var(--site-primary);
-    text-align: center;
-    margin-bottom: 8px;
-}
-
-.hero-item-content {
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--body-text);
-    text-align: center;
-    margin-bottom: 8px;
-}
-
-.team {
-    padding-top: 32px;
-    padding-bottom: 32px;
+.icon-astronaut::before {
+    background-image: url(../images/astronaut.svg);
 }
 
 .team-list {
@@ -372,22 +350,16 @@
 }
 
 
-.icon-antenna::before {
-    background-image: url(../images/antenna.svg);
+.hero-secondary-heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--site-primary);
+    margin-bottom: 72px;
 }
-
-.icon-clock::before {
-    background-image: url(../images/clock.svg);
-}
-
-.icon-diagram::before {
-    background-image: url(../images/diagram.svg);
-}
-
-.icon-astronaut::before {
-    background-image: url(../images/astronaut.svg);
-}
-
 
 .doing {
     padding-top: 120px;
@@ -495,28 +467,50 @@
     overflow: hidden;
     }
 
+
+.hero-item-heading {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--site-primary);
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.features-heading {
+    margin-bottom: 8px;
+    margin-top: 0px;
+    text-align: left;
+}
+
+.team {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 .card-heading {
     text-align: left;
     padding-left: 16px;
     padding-bottom: 8px;
 }
 
+.hero-item-content {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--body-text);
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.features-text {
+    width: 264px;
+    height: 72px;
+    margin: 0;
+    text-align: left;
+}
+
 .card-item-content {
     text-align: left;
     padding-left: 16px;
-}
-
-.logo-footer {
-    text-decoration: none;
-    color: var(--btn-back);
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 21px;
-    align-items: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
 }
 
 .footer-text {
@@ -621,6 +615,20 @@
     outline: none;
 }
 
+.logo-footer {
+    text-decoration: none;
+    color: var(--btn-back);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+
 .block-subscribe-form {
     position: relative;
     height: 80px;
@@ -696,7 +704,6 @@
     outline: none;
 }
 
-
 .backdrop {
     position: fixed;
     top: 0;
@@ -713,6 +720,18 @@
     transition: opacity 250ms;
 }
 
+.modal {
+    position: relative;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    width: 408px;
+    height: 584px;
+    background-color: var(--modal-bcgd);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
 
 .close-btn {
     position: absolute;
@@ -730,7 +749,6 @@
     background-color: var(--btn-border);
     transition: background-color var(--basic-transition);
 }
-
 
 .close-btn:is(:hover, :focus) {
     background-color: var(--btn-hover-active);
@@ -902,4 +920,5 @@ textarea:focus {
     appearance: none;
     padding-left: 0;
 }
-}
+
+*/
