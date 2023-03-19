@@ -1,7 +1,7 @@
-@media screen and (min-width:767px) and (max-width:1199px) {
+@media screen and (min-width:768px) and (max-width:1199px) {
 
    .container {
-    margin: 0;
+    margin: 0 auto;
    }
 
     .logo {
@@ -109,8 +109,7 @@
         padding-bottom: 112px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
         max-width: 1440px;
-        height: 600px;
-        margin: 0 auto;
+        height: 436px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -125,8 +124,9 @@
         color: var(--WHITE);
         width: 496px;
         text-align: center;
+        margin-top: 0;
         margin-right: auto;
-        margin-bottom: 36px ;
+        margin-bottom: 36px;
         margin-left: auto;
     }
 
@@ -162,5 +162,5 @@
         overflow: hidden;
     }
 
-
+    
 }
