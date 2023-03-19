@@ -85,7 +85,7 @@
         height: 4px;
         background-color: var(--btn-hover-active);
         border-radius: 2px;
-        bottom: -1px;
+        bottom: -6px;
         color: var(--icon-hover-green);
 }
 
@@ -170,5 +170,8 @@
 
     .features-list {
         display: flex;
+        flex-wrap: wrap;
     }
+
+    
 }
