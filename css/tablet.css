@@ -99,6 +99,12 @@
         transition: color var(--basic-transition);
 }
 
+    .address-list {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+
     .address-list .address-item + .address-item {
         margin-top: 12px;
     }
@@ -162,5 +168,7 @@
         overflow: hidden;
     }
 
-    
+    .features-list {
+        display: flex;
+    }
 }
