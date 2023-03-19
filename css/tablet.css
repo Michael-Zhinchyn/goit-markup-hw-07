@@ -1,0 +1,166 @@
+@media screen and (min-width:767px) and (max-width:1199px) {
+
+   .container {
+    margin: 0;
+   }
+
+    .logo {
+        text-decoration: none;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.33;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--site-primary);
+    }
+
+    .logo-firstcolor {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.33;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--btn-primary);
+    }
+
+    .header {
+        border-bottom: 1px solid var(--btn-border); 
+    }
+
+    .menu-open-btn,
+    .menu-close-btn,
+    .is-hidden {
+        display: none;
+    }
+
+    .header-container,
+    .site-nav,
+    .site-address,
+    .nav-tablet {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .nav-tablet {
+        position: absolute;
+        left: 50%;
+        
+        transform: translate(-50%);
+    }
+
+    .menu-link {
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .nav-list .header-item + .header-item {
+        margin-left: 40px;
+    }
+
+    .menu-link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--site-primary);
+    }
+
+    .link-studio,
+    .link-portfolio {
+        color: var(--btn-hover-active);
+}
+
+    .link-studio::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 48px;
+        height: 4px;
+        background-color: var(--btn-hover-active);
+        border-radius: 2px;
+        bottom: -1px;
+        color: var(--icon-hover-green);
+}
+
+    .adress-link {
+        text-decoration: none;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: var(--body-text);
+        transition: color var(--basic-transition);
+}
+
+    .address-list .address-item + .address-item {
+        margin-top: 12px;
+    }
+
+    .hero {
+        background-color: var(--site-primary);
+        padding-top: 112px;
+        padding-bottom: 112px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+        max-width: 1440px;
+        height: 600px;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+   
+    .hero-primary-heading {
+        align-items: center;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        color: var(--WHITE);
+        width: 496px;
+        text-align: center;
+        margin-right: auto;
+        margin-bottom: 36px ;
+        margin-left: auto;
+    }
+
+
+    .btn {
+        display: block;
+        background: var(--btn-primary);
+        border-radius: 4px;
+        border: var(--btn-primary);
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.4px;
+        color: var(--WHITE);
+        cursor: pointer;
+        width: 169px;
+        height: 56px;
+        margin: 0 auto;
+        text-decoration: none;
+        transition: background-color var(--basic-transition);
+    }
+
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0, 0, 0, 0);
+        overflow: hidden;
+    }
+
+
+}
