@@ -173,5 +173,9 @@
         flex-wrap: wrap;
     }
 
+    .features-item {
+        flex-basis: calc((100% -1px) / 2);
+    }
+
     
 }
