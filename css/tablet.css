@@ -121,7 +121,7 @@
     .customers-list {
         display: flex;
         flex-wrap: wrap;
-        margin-left: 108px;
+    
     }
 
     .company-logo-item {
@@ -140,13 +140,35 @@
     }
 
     .footer {
-        justify-content: center;
         padding-top: 96px;
         padding-bottom: 96px;
         padding-left: 15px;
         padding-right: 15px;
         height: 456px;
     }
+
+    .footer-blocks {
+        padding:0;
+        display: flex;
+    }
+
+    
+    .tablet-blocks
+     {
+        display: flex;
+    }
+
+    .block-subscribe-form
+    {
+        display: none;
+    }
+
+    .footer-tablet {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+   
 
     .logo-footer {
         text-decoration: none;
@@ -160,14 +182,8 @@
         text-transform: uppercase;
       }
 
-    .footer-blocks {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0;
-        margin-left: 108px;
-        margin-right: 108px;
-    }
-
+     
+    
     .block-logo,
     .block-social {
         margin-right: 24px;
@@ -184,17 +200,13 @@
         margin-bottom: 16px;
     }
 
-    .block-subscribe-form {
-        display: none;
-    }
-
 
     .form-tablet {
         display: flex;
+        
         margin-top: 72px;
-        margin-left: 108px;
-        margin-right: 108px;
         height: 80px;
+
     }
 
     .form-field-ftr {
