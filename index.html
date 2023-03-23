@@ -188,13 +188,25 @@
         <h2 class="hero-secondary-heading">What are we doing</h2>
         <ul class="doing-pictures list">
           <li class="hero-item">
-            <img src="./images/monitor-with-graphs.jpg" alt="picture with site on monitor" width="360" />
+            <img srcset="
+            ./images/monitor-with-graphs.jpg 360w,
+            ./images/Monitor@2x-720w.jpg 720w" 
+            src="./images/monitor-with-graphs.jpg"
+            alt="picture with site on monitor"/>
           </li>
           <li class="hero-item">
-            <img src="./images/phones.jpg" alt="mobile applications" width="360" />
+            <img srcset="
+            ./images/phones.jpg 360w,
+            ./images/phones@2x-720w.jpg 720w" 
+            src="./images/phones.jpg" 
+            alt="mobile applications"/>
           </li>
           <li class="hero-item">
-            <img src="./images/phone-on-hands.jpg" alt="multidevice applications" width="360" />
+            <img srcset="
+            ./images/phone-on-hands.jpg 360w,
+            ./images/phone-on-hands@2x-720w.jpg 720w" 
+            src="./images/phone-on-hands.jpg" 
+            alt="multidevice applications"/>
           </li>
         </ul>
       </div>
@@ -208,7 +220,11 @@
             <img srcset="
             ./images/Mark-Guerrero.jpg 264w, 
             ./images/Mark@2x.jpg 528w"
-            src="./images/Mark-Guerrero.jpg" alt="photo of product Designer Mark-Guerrero"/>
+            src="./images/Mark-Guerrero.jpg"
+            alt="photo of product Designer Mark-Guerrero"
+            sizes="(min-width: 768px) 33vw, (min-width: 536px) 50vw, 100vw"
+            
+            />
             <div class="team">
               <h3 class="hero-item-heading">Mark Guerrero</h3>
               <p class="hero-item-content">Product Designer</p>
@@ -248,7 +264,9 @@
             <img srcset="
             ./images/Tom-Ford.jpg 264w, 
             ./images/Tom@2x.jpg 528w" 
-            src="./images/Tom-Ford.jpg" alt="photo of frontend developer Tom Ford"/>
+            src="./images/Tom-Ford.jpg"
+            alt="photo of frontend developer Tom Ford"
+            sizes="(min-width: 768px) 33vw, (min-width: 536px) 50vw, 100vw"/>
             <div class="team">
               <h3 class="hero-item-heading">Tom Ford</h3>
               <p class="hero-item-content">Frontend Developer</p>
@@ -288,7 +306,9 @@
             <img srcset="
             ./images/Camila-Garcia.jpg 264w, 
             ./images/Camila@2x.jpg 528w" 
-            src="./images/Camila-Garcia.jpg" alt="photo of merketologist Camila Garcia"/>
+            src="./images/Camila-Garcia.jpg" 
+            alt="photo of merketologist Camila Garcia"
+            sizes="(min-width: 768px) 33vw, (min-width: 536px) 50vw, 100vw"/>
             <div class="team">
               <h3 class="hero-item-heading">Camila Garcia</h3>
               <p class="hero-item-content">Marketing</p>
@@ -328,7 +348,9 @@
             <img srcset="
             ./images/Daniel-Wilson.jpg 264w, 
             ./images/Daniel@2x.jpg 528w"
-             src="./images/Daniel-Wilson.jpg" alt="photo of UI designer"/>
+             src="./images/Daniel-Wilson.jpg" 
+             alt="photo of UI designer"
+             sizes="(min-width: 768px) 33vw, (min-width: 536px) 50vw, 100vw"/>
             <div class="team">
               <h3 class="hero-item-heading">Daniel Wilson</h3>
               <p class="hero-item-content">UI Designer</p>
@@ -428,70 +450,125 @@
   <!--FOOER-->
   <footer class="footer">
     
-      <div class="container footer-blocks">
-        
-        <div class="block-logo">
-          <a href="./index.html" class="logo-footer"><span class="logo-firstcolor">Web</span>Studio</a>
-          <p class="footer-text">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
-  
-        <div class="block-social">
-          <h3 class="social-media-heading">Social media</h3>
-          <ul class="social-list list">
-            <li class="social-item item">
-              <a href="#" class="social-list-item-link item-link-instagram">
-                <svg class="social-list-icon" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-  
-            <li class="social-item item">
-              <a href="#" class="social-list-item-link item-link-twitter">
-                <svg class="social-list-icon" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-  
-            <li class="social-item item">
-              <a href="#" class="social-list-item-link item-link-facebook">
-                <svg class="social-list-icon" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-  
-            <li class="social-item item">
-              <a href="#" class="social-list-item-link item-link-linkedin">
-                <svg class="social-list-icon" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-  
-        <form class="block-subscribe-form">
-          <div class="form-field-ftr">
-            <label for="mail" class="form-label-ftr">Subscribe</label>
-            <input type="email" name="mail" id="mail" placeholder="E-mail" />
+      <div class="container">
+        <div class="footer-blocks">
+          <div class="block-logo desctop">
+            <a href="./index.html" class="logo-footer"><span class="logo-firstcolor">Web</span>Studio</a>
+            <p class="footer-text">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
           </div>
-          <button type="submit" class="btn-subscribe">Subscribe</button>
-        </form>
-        
-      </div>
-
-      <form class="form-tablet">
-        <div class="form-field-ftr">
-          <label for="mail" class="form-label-ftr">Subscribe</label>
-          <input type="email" name="mail" id="mail" placeholder="E-mail" />
+    
+          <div class="block-social desctop">
+            <h3 class="social-media-heading">Social media</h3>
+            <ul class="social-list list">
+              <li class="social-item item">
+                <a href="#" class="social-list-item-link item-link-instagram">
+                  <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+    
+              <li class="social-item item">
+                <a href="#" class="social-list-item-link item-link-twitter">
+                  <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+    
+              <li class="social-item item">
+                <a href="#" class="social-list-item-link item-link-facebook">
+                  <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+    
+              <li class="social-item item">
+                <a href="#" class="social-list-item-link item-link-linkedin">
+                  <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <form class="block-subscribe-form desctop">
+            <div class="form-field-ftr">
+              <label for="mail" class="form-label-ftr">Subscribe</label>
+              <input type="email" name="mail" id="mail" placeholder="E-mail" />
+            </div>
+            <button type="submit" class="btn-subscribe">Subscribe</button>
+          </form>
         </div>
-        <button type="submit" class="btn-subscribe">Subscribe</button>
-      </form>
+      
+
+        <div class="tablet">
+
+          <div class="footer-blocks">
+              <div class="block-logo">
+              <a href="./index.html" class="logo-footer"><span class="logo-firstcolor">Web</span>Studio</a>
+              <p class="footer-text">
+                Increase the flow of customers and sales for your business with
+                digital marketing & growth solutions.
+              </p>
+            </div>
+              <div class="block-social">
+              <h3 class="social-media-heading">Social media</h3>
+              <ul class="social-list list">
+                <li class="social-item item">
+                  <a href="#" class="social-list-item-link item-link-instagram">
+                    <svg class="social-list-icon" width="24" height="24">
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+      
+                <li class="social-item item">
+                  <a href="#" class="social-list-item-link item-link-twitter">
+                    <svg class="social-list-icon" width="24" height="24">
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+      
+                <li class="social-item item">
+                  <a href="#" class="social-list-item-link item-link-facebook">
+                    <svg class="social-list-icon" width="24" height="24">
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+      
+                <li class="social-item item">
+                  <a href="#" class="social-list-item-link item-link-linkedin">
+                    <svg class="social-list-icon" width="24" height="24">
+                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <form class="form-tablet">
+            <div class="form-field-ftr">
+              <label for="mail" class="form-label-ftr">Subscribe</label>
+              <input type="email" name="mail" id="mail" placeholder="E-mail" />
+            </div>
+            <button type="submit" class="btn-subscribe">Subscribe</button>
+          </form>
+
+        </div>
+        
+
+      </div>
+      
+
+      
 
   </footer>
   <!--FOOTER-->

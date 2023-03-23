@@ -96,6 +96,10 @@
         margin-top: 72px;
     }
 
+    .features-heading {
+        text-align: left;
+    }
+
     .features-text {
         width: 356px;
     }
@@ -113,6 +117,10 @@
         justify-content: center;
     }
 
+    .team-item {
+        margin-top: 72px;
+    }
+
     
     .customers-heading {
         margin: 0;
@@ -121,14 +129,17 @@
     .customers-list {
         display: flex;
         flex-wrap: wrap;
-    
+        justify-content: center;
+        
     }
 
     .company-logo-item {
-        margin: 24px;
+        display: inline-block;
+        width: calc(100% /24px) / 3;
+        margin: 12px;
         margin-top: 72px;
-        margin-left: 0;
     }
+
 
     .logo-icon {
         transition: fill var(--basic-transition);
@@ -152,23 +163,22 @@
         display: flex;
     }
 
-    
-    .tablet-blocks
-     {
-        display: flex;
-    }
+   .desctop {
+    display: none;
+   }
+
+   .tablet {
+    margin: auto;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+   }
 
     .block-subscribe-form
     {
         display: none;
     }
-
-    .footer-tablet {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-   
 
     .logo-footer {
         text-decoration: none;
@@ -184,8 +194,7 @@
 
      
     
-    .block-logo,
-    .block-social {
+    .block-logo {
         margin-right: 24px;
         margin-left: 0;
     }
