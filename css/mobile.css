@@ -1,5 +1,6 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
+  
     .site-nav {
         display: flex;
         justify-content: space-between;
@@ -29,11 +30,11 @@
     }
 
     .mobile-menu {
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         left: 0;
-        
+        overflow-y: hidden;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -123,7 +124,7 @@
         font-size: 36px;
         line-height: 1.11;
         text-transform: capitalize;
-        width: 320px;
+        max-width: 320px;
         height: 80px;
         margin-bottom: 72px;
     }
@@ -269,8 +270,8 @@
         transform: translate(-50%, -50%);
         padding: 72px 16px 24px 16px;
         background-color: #FCFCFC;
-        width: 392px;
-        height: auto;
+        width: 100vw;
+        height: 100vh;
     }
 
     .form-field-modal {
@@ -315,7 +316,7 @@
     }
 
     input {
-        padding-left: 38px;
+        padding-left: 16px;
         color: var(--site-primary);
         transition: outline-color var(--basic-transition);
     }
@@ -384,6 +385,7 @@
 
     .policy-link {
         line-height: 1.33;
+        color: var(--btn-hover-active);
     }
 
     .policy-text::before {
@@ -424,10 +426,7 @@
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
 
-    .features-list {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  
 
     .features-item {
         flex-basis: calc((100% - 16px) / 2);

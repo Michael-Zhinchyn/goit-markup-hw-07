@@ -75,7 +75,11 @@ margin: 0 auto;
 
 .menu-link {
     transition: color var(--basic-transition);
-    }
+}
+
+.link-studio, .link-portfolio {
+    color: var(--btn-hover-active);
+}
 
 
 .menu-link:hover,
@@ -107,7 +111,6 @@ margin: 0 auto;
 .adress-link:focus {
     color: var(--btn-hover-active);
     outline-color: var(--btn-hover-active);
-
 }
 
 .adress-link {
@@ -385,8 +388,6 @@ margin: 0 auto;
 }
 
 
-
-
 .social-list-item-link:hover,
 .social-list-item-link:focus {
     background-color: var(--icon-hover-green);
@@ -569,7 +570,7 @@ textarea {
 }
 
 input {
-    padding-left: 38px;
+    padding-left: 16px;
     color: var(--site-primary);
     transition: outline-color var(--basic-transition);
 }
@@ -601,7 +602,7 @@ textarea:focus {
     height: 56px;
     margin: 0 auto;
     text-decoration: none;
-    transition: background-color var(--basic-transition);;
+    transition: background-color var(--basic-transition);
 }
 
 .btn-modal:hover,
@@ -640,6 +641,7 @@ textarea:focus {
 
 .policy-link {
     line-height: 1.33;
+    color: var(--btn-hover-active);
 }
 
 .policy-text::before {
