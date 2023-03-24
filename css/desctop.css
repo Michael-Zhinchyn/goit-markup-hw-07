@@ -139,6 +139,7 @@ margin: 0 auto;
     max-width: 1440px;
     height: 600px;
     margin: 0 auto;
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office.jpg");
 }
 
 .hero-primary-heading {
@@ -673,3 +674,12 @@ textarea:focus {
     padding-left: 0;
 }
 }
+
+@media screen and (min-device-pixel-ratio:2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+          .hero {
+              background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office@2x.jpg");
+          }
+      }
+

@@ -121,6 +121,7 @@
         transition: background-color var(--basic-transition);
     }
 
+
     .hero-primary-heading {
         font-size: 36px;
         line-height: 1.11;
@@ -128,6 +129,10 @@
         max-width: 320px;
         height: 80px;
         margin-bottom: 72px;
+    }
+
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/Dark-bg@1xmobile.jpg");
     }
 
     .features {
@@ -158,8 +163,6 @@
     .company-logo-link:focus .logo-icon {
         fill: var(--btn-hover-active);
     }
-
-   
 
     .footer {
         display: flex;
@@ -263,19 +266,6 @@
         background-color: rgba(46, 47, 66, 0.4);
         transition: opacity var(--basic-transition);
     }
-
-    /*
-    .form {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 72px 16px 24px 16px;
-        background-color: #FCFCFC;
-        width: 90vw;
-        height: 90vh;
-    }
-    */
 
     .form-field-modal {
         display: flex;
@@ -435,12 +425,23 @@
         appearance: none;
         padding-left: 0;
     }
-
 }
 
 @media screen and (min-width: 480px) {
     .container {
         width: 480px;
     }
-    
 }
+
+@media screen and (min-device-pixel-ratio:2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+          .hero {
+              background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg@2xmobile.jpg);
+          }
+      }
+
+
+
+
+
