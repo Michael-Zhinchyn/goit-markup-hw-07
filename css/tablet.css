@@ -137,7 +137,6 @@
         flex-wrap: wrap;
         margin-bottom: 0px;
         gap: 24px;
-        padding: 0;
         justify-content: center;
     }
 
@@ -148,6 +147,8 @@
 
     .team-item {
         margin-top: 72px;
+        
+        
     }
 
     
@@ -163,8 +164,6 @@
     }
 
     .company-logo-item {
-        display: inline-block;
-        width: calc(100% /24px) / 3;
         margin: 12px;
         margin-top: 72px;
     }

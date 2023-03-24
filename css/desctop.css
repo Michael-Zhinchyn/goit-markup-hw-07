@@ -149,6 +149,10 @@ margin: 0 auto;
     margin-bottom: 48px ;
 }
 
+.hero-secondary-heading {
+    margin-bottom: 72px;
+}
+
 .btn {
     transition: background-color var(--basic-transition);
 }
