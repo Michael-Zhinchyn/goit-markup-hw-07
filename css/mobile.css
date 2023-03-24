@@ -59,7 +59,7 @@
         text-transform: capitalize;
     }
 
-    .link-contacts {
+    .menu-link:active {
         color: var(--btn-hover-active);
     }
 
@@ -69,7 +69,11 @@
         line-height: 1.11;
         letter-spacing: 0.02em;
         text-transform: capitalize;
-        color: var(--btn-primary);
+        color: var(--site-primary);
+    }
+
+    .menu-phone:active {
+        color: var(--btn-hover-active);
     }
 
     .phone-item {
@@ -88,9 +92,12 @@
         color: var(--body-text);
     }
 
+    .menu-email:active {
+        color: var(--btn-hover-active);
+    }
+
     .social-list-menu {
         display: flex;
-
         gap: 36px;
         
     }
@@ -103,6 +110,10 @@
         height: 100%;
         border-radius: 50%;
         background-color: var(--btn-primary);
+    }
+
+    .social-list-item-link-menu:active {
+        background-color: var(--icon-hover-green);
     }
 
     .menu-close-btn {
@@ -118,6 +129,11 @@
         border: 1px solid var(--btn-border);
         background-color: var(--WHITE);
         transition: background-color var(--basic-transition);
+    }
+
+    .menu-close-btn:active{
+        background-color: var(--btn-hover-active);
+        fill: var(--WHITE);
     }
 
 
@@ -145,8 +161,13 @@
     .team-item {
        margin: 72px auto 0 auto;
        width: 264px;
-
     }
+
+    .team-social-link:hover,
+    .team-social-link:active {
+    background-color: var(--btn-hover-active);
+    outline: none;
+}
 
     .customers-list {
         width: auto;
@@ -196,6 +217,11 @@
         margin-bottom: 16px;
     }
 
+    .social-list-item-link:active {
+    background-color: var(--icon-hover-green);
+    outline: none;
+}
+
     .block-subscribe-form {
         margin: auto;
     }
@@ -244,6 +270,11 @@
         transition: background-color var(--basic-transition);
     }
 
+    .close-btn:active{
+        background-color: var(--btn-hover-active);
+        fill: var(--WHITE);
+    }
+
     .modal-heading {
         text-align: center;
         font-size: 16px;
@@ -280,7 +311,6 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 90vw;
-        
         padding: 72px 24px 24px;
         background-color: var(--modal-bcgd);
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);

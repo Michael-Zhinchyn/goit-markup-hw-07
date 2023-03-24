@@ -197,7 +197,8 @@
 
    .tablet {
         margin: auto;
-        display: block;
+        display:flex;
+        flex-wrap: wrap;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -236,7 +237,8 @@
         margin-bottom: 16px;
     }
 
-    .social-list-item-link:hover
+    .social-list-item-link:hover,
+    .social-list-item-link:active
     {
         background-color: var(--icon-hover-green);
         outline: none;
