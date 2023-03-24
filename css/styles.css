@@ -51,6 +51,7 @@
   }
 
   .container {
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -345,14 +346,14 @@
 }
 
 .form-field-ftr input {
-  width: 264px;
+ 
   height: 40px;
   background-color: var(--site-primary);
   border: 1px solid var(--WHITE);
   border-radius: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
-
+  margin: 0;
   color: var(--WHITE);
 }
 
