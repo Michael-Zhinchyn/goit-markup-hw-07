@@ -195,12 +195,7 @@
    }
 
    .tablet {
-        margin: auto;
-        display:flex;
-        flex-wrap: wrap;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+        padding-left: 93px;
    }
 
     .block-subscribe-form
