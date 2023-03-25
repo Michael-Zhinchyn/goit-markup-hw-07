@@ -99,7 +99,7 @@
     .social-list-menu {
         display: flex;
         gap: 36px;
-        
+
     }
 
     .social-list-item-link-menu {
@@ -131,7 +131,7 @@
         transition: background-color var(--basic-transition);
     }
 
-    .menu-close-btn:active{
+    .menu-close-btn:active {
         background-color: var(--btn-hover-active);
         fill: var(--WHITE);
     }
@@ -159,15 +159,15 @@
     }
 
     .team-item {
-       margin: 72px auto 0 auto;
-       width: 264px;
+        margin: 72px auto 0 auto;
+        width: 264px;
     }
 
     .team-social-link:hover,
     .team-social-link:active {
-    background-color: var(--btn-hover-active);
-    outline: none;
-}
+        background-color: var(--btn-hover-active);
+        outline: none;
+    }
 
     .customers-list {
         width: auto;
@@ -193,14 +193,14 @@
         height: 664px;
     }
 
-   .footer-mobile {
-    margin-left: auto;
-    margin-right: auto;
-   }
+    .footer-mobile {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     .block-logo {
         text-align: center;
-        }
+    }
 
     .block-social {
         margin: 72px auto;
@@ -218,9 +218,9 @@
     }
 
     .social-list-item-link:active {
-    background-color: var(--icon-hover-green);
-    outline: none;
-}
+        background-color: var(--icon-hover-green);
+        outline: none;
+    }
 
     .block-subscribe-form {
         margin: auto;
@@ -248,7 +248,7 @@
         background: var(--btn-hover-active);
         outline: none;
     }
-    
+
     .is-hidden {
         opacity: 0;
         pointer-events: none;
@@ -270,7 +270,7 @@
         transition: background-color var(--basic-transition);
     }
 
-    .close-btn:active{
+    .close-btn:active {
         background-color: var(--btn-hover-active);
         fill: var(--WHITE);
     }
@@ -355,7 +355,7 @@
 
     input {
         padding-left: 16px;
-        
+
         color: var(--site-primary);
         transition: outline-color var(--basic-transition);
     }
@@ -464,14 +464,9 @@
 }
 
 @media screen and (min-device-pixel-ratio:2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-          .hero {
-              background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg@2xmobile.jpg);
-          }
-      }
-
-
-
-
-
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg@2xmobile.jpg);
+    }
+}
