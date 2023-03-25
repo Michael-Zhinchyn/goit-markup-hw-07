@@ -538,6 +538,7 @@ margin: 0 auto;
     border-radius: 4px;
     background-color:var(--modal-bcgd);
     height: 40px; 
+    padding-left: 50px;
 }
 
 .form-field-modal textarea::placeholder {
