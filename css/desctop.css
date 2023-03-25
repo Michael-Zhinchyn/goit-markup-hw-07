@@ -348,6 +348,7 @@ margin: 0 auto;
 
 
 .features-text {
+    font-weight: inherit;
     width: 264px;
     height: 72px;
     margin: 0;
