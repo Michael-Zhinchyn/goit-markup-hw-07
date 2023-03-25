@@ -571,6 +571,7 @@ textarea {
 
 input {
     padding-left: 16px;
+    width: 274px;
     color: var(--site-primary);
     transition: outline-color var(--basic-transition);
 }
