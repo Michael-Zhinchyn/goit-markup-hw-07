@@ -23,17 +23,24 @@
     <div class="container header-container">
       <nav class="site-nav">
         <a href="./index.html" class="logo"><span class="logo-firstcolor">Web</span>Studio</a>
-        <ul class="nav-list list">
-          <li class="header-item">
-            <a class="menu-link link" href="./index.html">Studio</a>
+
+        <ul class="nav-list list nav-tablet">
+          <li class="nav-item header-item">
+            <a class="menu-link link link-studio" href="./index.html">Studio</a>
           </li>
           <li class="nav-item header-item">
-            <a class="menu-link link link-portfolio" href="./portfolio.html">Portfolio</a>
+            <a class="menu-link link page" href="./portfolio.html">Portfolio</a>
           </li>
-          <li class="header-item">
+          <li class="nav-item header-item">
             <a class="menu-link link" href="">Contacts</a>
           </li>
         </ul>
+
+        <button data-mobile-menu-open type="button" class="menu-open-btn">
+          <svg width="32px" height="22px">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
       </nav>
       <address class="site-address">
         <ul class="address-list list">
@@ -45,9 +52,79 @@
           </li>
         </ul>
       </address>
+      <div class=" backdrop is-hidden" data-mobile-menu>
+        <div class="mobile-menu">
+          <button data-mobile-menu-close type="button" class="menu-close-btn">
+            <svg class="modal-close-btn" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+
+          <nav>
+            <ul class="nav-list list">
+              <li class="nav-item header-item">
+                <a class="menu-link link-studio" href="./index.html">Studio</a>
+              </li>
+              <li class="nav-item header-item">
+                <a class="menu-link page" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item header-item">
+                <a class="menu-link link-contacts" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div>
+            <ul class="address-list list">
+              <li class="header-item phone-item">
+                <a class="adress-link menu-phone" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+              <li class="header-item email-item">
+                <a class="adress-link menu-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </ul>
+
+            <ul class="social-list-menu list">
+              <li class="social-item item">
+                <a href="#" class="social-list-item-link-menu">
+                  <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social-item item">
+                <a href="#" class="social-list-item-link-menu">
+                  <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social-item item">
+                <a href="#" class="social-list-item-link-menu">
+                  <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social-item item">
+                <a href="#" class="social-list-item-link-menu">
+                  <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
     </div>
   </header>
-
   <!--Header-->
 
   <!--Hero-->
@@ -80,8 +157,23 @@
           <li class="hero-item card-item">
             <a class="list-link" href="">
               <div class="wrapper">
-                <img src="./images/banking-app.jpg" alt="banking-app_photo" width="360" />
 
+                <picture>
+                  <source
+                  srcset="./images/banking-app@1x.jpg 1x, ./images/banking-app@2x.jpg 2x"
+                  media="(max-width: 767px)">
+
+                  <source
+                  srcset="./images/banking-app@1x.jpg 1x, ./images/banking-app@2x.jpg 2x"
+                  media="(max-width: 1199px)">
+
+                  <source
+                  srcset="./images/banking-app@1x.jpg 1x, ./images/banking-app@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+
+                  <img src="./images/banking-app.jpg" alt="banking-app-photo"/>
+                </picture>
+                
                 <div class="card-thumb">
                   <p>
                     14 Stylish and User-Friendly App Desighn Concepts * Task
@@ -103,8 +195,23 @@
           <li class="hero-item card-item">
             <a class="list-link" href="">
               <div class="wrapper">
-                <img src="./images/cashless-payment.jpg" alt="banking-app_photo" width="360" />
 
+                <picture>
+                  <source
+                  srcset="./images/cashless-payment@1x.jpg 1x, ./images/cashless-payment@2x.jpg 2x"
+                  media="(max-width: 767px)">
+
+                  <source
+                  srcset="./images/cashless-payment@1x.jpg 1x, ./images/cashless-payment@2x.jpg 2x"
+                  media="(max-width: 1199px)">
+
+                  <source
+                  srcset="./images/cashless-payment@1x.jpg 1x, ./images/cashless-payment@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+
+                  <img src="./images/cashless-payment.jpg" alt="cashless-payment-photo"/>
+                </picture>
+                
                 <div class="card-thumb">
                   <p>
                     14 Stylish and User-Friendly App Desighn Concepts * Task
@@ -126,8 +233,23 @@
           <li class="hero-item card-item">
             <a class="list-link" href="">
               <div class="wrapper">
-                <img src="./images/meditation-app.jpg" alt="banking-app_photo" width="360" />
 
+                <picture>
+                  <source
+                  srcset="./images/meditation-app@1x.jpg 1x, ./images/meditation-app@2x.jpg 2x"
+                  media="(max-width: 767px)">
+
+                  <source
+                  srcset="./images/meditation-app@1x.jpg 1x, ./images/meditation-app@2x.jpg 2x"
+                  media="(max-width: 1199px)">
+
+                  <source
+                  srcset="./images/meditation-app@1x.jpg 1x, ./images/meditation-app@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+
+                  <img src="./images/meditation-app.jpg" alt="meditation-app-photo"/>
+                </picture>
+                
                 <div class="card-thumb">
                   <p>
                     14 Stylish and User-Friendly App Desighn Concepts * Task
@@ -147,8 +269,23 @@
           <li class="hero-item card-item">
             <a class="list-link" href="">
               <div class="wrapper">
-                <img src="./images/taxi-service.jpg" alt="banking-app_photo" width="360" />
 
+                <picture>
+                  <source
+                  srcset="./images/taxi-service@1x.jpg 1x, ./images/taxi-service@2x.jpg 2x"
+                  media="(max-width: 767px)">
+
+                  <source
+                  srcset="./images/taxi-service@1x.jpg 1x, ./images/taxi-service@2x.jpg 2x"
+                  media="(max-width: 1199px)">
+
+                  <source
+                  srcset="./images/taxi-service@1x.jpg 1x, ./images/taxi-service@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+
+                  <img src="./images/taxi-service.jpg" alt="taxi-service-photo"/>
+                </picture>
+                
                 <div class="card-thumb">
                   <p>
                     14 Stylish and User-Friendly App Desighn Concepts * Task
@@ -168,8 +305,23 @@
           <li class="hero-item card-item">
             <a class="list-link" href="">
               <div class="wrapper">
-                <img src="./images/screen-illustratiom.jpg" alt="banking-app_photo" width="360" />
 
+                <picture>
+                  <source
+                  srcset="./images/screen-illustration@1x.jpg 1x, ./images/screen-illustration@2x.jpg 2x"
+                  media="(max-width: 767px)">
+
+                  <source
+                  srcset="./images/screen-illustration@1x.jpg 1x, ./images/screen-illustration@2x.jpg 2x"
+                  media="(max-width: 1199px)">
+
+                  <source
+                  srcset="./images/screen-illustration@1x.jpg 1x, ./images/screen-illustration@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+
+                  <img src="./images/screen-illustratiom.jpg" alt="screen-illustratiom-photo"/>
+                </picture>
+                
                 <div class="card-thumb">
                   <p>
                     14 Stylish and User-Friendly App Desighn Concepts * Task
@@ -191,8 +343,23 @@
           <li class="hero-item card-item">
             <a class="list-link" href="">
               <div class="wrapper">
-                <img src="./images/online-courses.jpg" alt="banking-app_photo" width="360" />
 
+                <picture>
+                  <source
+                  srcset="./images/online-courses@1x.jpg 1x, ./images/online-courses@2x.jpg 2x"
+                  media="(max-width: 767px)">
+
+                  <source
+                  srcset="./images/online-courses@1x.jpg 1x, ./images/online-courses@2x.jpg 2x"
+                  media="(max-width: 1199px)">
+
+                  <source
+                  srcset="./images/online-courses@1x.jpg 1x, ./images/online-courses@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+
+                  <img src="./images/online-courses.jpg" alt="online-courses-photo"/>
+                </picture>
+                
                 <div class="card-thumb">
                   <p>
                     14 Stylish and User-Friendly App Desighn Concepts * Task
@@ -212,7 +379,7 @@
           <li class="hero-item card-item">
             <a class="list-link" href="">
               <div class="wrapper">
-                <img src="./images/instagram-stories-concept.jpg" alt="banking-app_photo" width="360" />
+                <img src="./images/instagram-stories-concept.jpg" alt="instagram-stories-photo" width="360" />
 
                 <div class="card-thumb">
                   <p>
@@ -234,7 +401,23 @@
           <li class="hero-item card-item">
             <a class="list-link" href="">
               <div class="wrapper">
-                <img src="./images/organic-food.jpg" alt="banking-app_photo" width="360" />
+
+                <picture>
+                  <source
+                  srcset="./images/organic-food@1x.jpg 1x, ./images/organic-food@2x.jpg 2x"
+                  media="(max-width: 767px)">
+
+                  <source
+                  srcset="./images/organic-food@1x.jpg 1x, ./images/organic-food@2x.jpg 2x"
+                  media="(max-width: 1199px)">
+
+                  <source
+                  srcset="./images/organic-food@1x.jpg 1x, ./images/organic-food@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+
+                  <img src="./images/organic-food.jpg" alt="organic-food-photo"/>
+                </picture>
+                
                 <div class="card-thumb">
                   <p>
                     14 Stylish and User-Friendly App Desighn Concepts * Task
@@ -255,7 +438,23 @@
             <div>
               <a class="list-link" href="">
                 <div class="wrapper">
-                  <img src="./images/fresh-coffe.jpg" alt="banking-app_photo" width="360" />
+
+                  <picture>
+                    <source
+                    srcset="./images/fresh-coffe@1x.jpg 1x, ./images/fresh-coffe@2x.jpg 2x"
+                    media="(max-width: 767px)">
+  
+                    <source
+                    srcset="./images/fresh-coffe@1x.jpg 1x, ./images/fresh-coffe@2x.jpg 2x"
+                    media="(max-width: 1199px)">
+  
+                    <source
+                    srcset="./images/fresh-coffe@1x.jpg 1x, ./images/fresh-coffe@2x.jpg 2x"
+                    media="(min-width: 1200px)">
+  
+                    <img src="./images/fresh-coffe.jpg" alt="fresh-coffe-photo"/>
+                  </picture>
+                  
 
                   <div class="card-thumb">
                     <p>
@@ -340,6 +539,61 @@
     </div>
   </footer>
   <!-- /FOOTER-->
+  <div class="backdrop is-hidden" data-modal>
+
+    <form class="form">
+      <div class="modal">
+        <button data-modal-close type="button" class="close-btn">
+          <svg class="modal-close-btn" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <h3 class="modal-heading">
+          Leave your contacts and we will call you back
+        </h3>
+
+        <div class="form-field-modal name">
+          <label for="name">Name</label>
+          <svg class="icon" width="18" height="24">
+            <use href="./images/icons.svg#icon-person-black"></use>
+          </svg>
+          <input type="text" name="user-name" id="name" />
+        </div>
+
+        <div class="form-field-modal phone">
+          <label for="tel">Phone</label>
+          <svg class="icon" width="18" height="24">
+            <use href="./images/icons.svg#icon-phone-black"></use>
+          </svg>
+          <input type="tel" name="tel" id="tel" />
+        </div>
+
+        <div class="form-field-modal">
+          <label for="email">Email</label>
+          <svg class="icon" width="18" height="24">
+            <use href="./images/icons.svg#icon-email-black"></use>
+          </svg>
+          <input type="email" name="mail" id="email" />
+        </div>
+
+        <div class="form-field-modal">
+          <label for="comment">Comment</label>
+          <textarea name="comment" id="comment" placeholder="Text input"></textarea>
+        </div>
+
+        <div class="policy-block">
+          <input class="checkbox" type="checkbox" name="policy" id="policy" />
+          <label class="policy-text" for="policy">I accept the terms and conditions of the <a class="policy-link"
+              href="">Privacy Policy</label>
+        </div>
+        <button class="btn-modal" type="submit">Send</button>
+
+    </form>
+  </div>
+  </div>
+
+  <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
