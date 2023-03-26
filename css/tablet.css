@@ -518,13 +518,17 @@
         padding-left: 0;
     }
 
+    .portfolio {
+        padding-top: 64px;
+        padding-bottom: 96px;
+    }
+
     .filter-list {
         display: flex;
         gap: var(--basic-margin);
         justify-content: center;
-        margin-top: 64px;
         padding-left: 0px;
-        margin-bottom: 0px;
+        margin-bottom: 64px;
     }
 
     .filter-btn {
@@ -556,24 +560,22 @@
         outline: none;
     }
 
-    .card-set {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
+    
     .card-set {
         padding: 0;
-        margin-top: 64px;
-        margin-bottom: 96px;
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
+        margin-left: calc(-1 * var(--basic-margin));
+    
     }
 
     .card-item {
         flex-basis: calc(100% / 2 - 24px);
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+        margin-left: 24px;
     }
+    
+    
 
     .card-item:hover,
     .card-item:active {
