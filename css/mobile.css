@@ -1,3 +1,4 @@
+@media screen and (min-width: 0) and (max-width: 767px) {
 
     .site-nav {
         display: flex;
@@ -289,6 +290,7 @@
 
     .backdrop {
         position: fixed;
+        z-index: 1;
         top: 0;
         left: 0;
         width: 100%;
@@ -558,6 +560,28 @@
         box-shadow: var(--box-shadow);
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 @media screen and (min-width: 428px) {
     .container {
