@@ -1,2 +1,2 @@
-# goit-markup-hw-07
+WebStudio
 https://michael-zhinchyn.github.io/goit-markup-hw-07/
